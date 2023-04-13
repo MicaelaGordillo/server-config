@@ -1,18 +1,18 @@
 # Configuramos el puerto de la aplicación
 server:
-  port: 6007
+  port: '{cipher}179d5586f232a50d30e87d498731dfaf8be7ecacc539d69262118ac57594f362'
 
 api:
-  key: ${API_KEY:w0QJ1JH5U0UH7ZsTAMPvt4uKc76kPsvz}
-  url: ${API_URL:https://api.apilayer.com/exchangerates_data/convert}
+  key: '{cipher}830ae940d16fb86a4671c987d14283fcc807c17962d59695f9abfa46176ffdf775929d3a9835ba7d31381a81dcb28f0c95eda4151f99a574a740c4004cdadd00'
+  url: '{cipher}d62cdb7a034d68dc3c9a717c7d7ba6d4cca566482aa5cc5a7b27d8ede897858e41c4dbb6f8723678658d1d2a19833438d7ae17f5a50562b46db5fddc402834b8f167c5f481ee5576d346d78d9c425369'
 
 # Configuramos la base de datos
 spring:
   datasource:
     type: org.postgresql.jdbc2.optional.SimpleDataSource
-    username: ${DB_USERNAME:postgres}
-    password: ${DB_PASSWORD:mysecretpassword}
-    url: ${DB_URL:jdbc:postgresql://localhost:5432/software}
+    username: '{cipher}f28370773f305317160796386fbfc7633af9d882afe12f853eb94acd4b339f53'
+    password: '{cipher}c84083764e7d9b815fb861df95ce083e336bd50bee867d7dfd8a74c71cd770ad00b58b2af2924e27a9f7f12b80d70d01'
+    url: '{cipher}d806f442ab3457f029d1b3a3ab68cf58dd084b7085cb6ae3fbaf88e962216dd5a44d9395b6bb6fe6d02683deeb0996eba6fb7ef02f9f56521e5ce2e32c7cd7da'
 
   jpa:
     hibernate:
@@ -33,7 +33,7 @@ keycloak:
   auth-server-url: http://localhost:8080
   autodetect-bearer-only: true
   credentials:
-    secret: sJfdWcUkRXjnGHvkkRZ6q5ejibUEcPY7
+    secret: '{cipher}170a8a28e97a7d3baac5b501701111c942bfda3e1b2b6868eb22f94fce590752f412bc77d9bba4677851d7f600c3e536abc8c7175029a604ae75344d5816f8dd'
   realm: software
   resource: backend
   ssl-required: none
